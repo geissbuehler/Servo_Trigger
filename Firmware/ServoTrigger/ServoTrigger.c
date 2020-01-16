@@ -116,8 +116,8 @@ static const int32_t PWM_RANGE_USEC = 1000; // diff between min and max PWM puls
 #else
 // some servos are less fragile/critical - if you want shorter/wider pulses, 
 // you can enable these and adjust the values
-static const int32_t PWM_MIN_USEC   = 700; // narrowest pulse is 700 usec
-static const int32_t PWM_RANGE_USEC = 1600; // diff between min and max PWM pulses.
+static const int32_t PWM_MIN_USEC   = 850; // narrowest pulse is 700 usec
+static const int32_t PWM_RANGE_USEC = 1300; // diff between min and max PWM pulses.
 #endif
 
 
