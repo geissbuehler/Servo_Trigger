@@ -1,0 +1,16 @@
+Install Prebuilt Windows Toolchain for AVR and make it available on the path:
+http://gnutoolchains.com/avr/
+
+Build:
+ServoTrigger\Debug> make all
+
+Install USBtinyISP Driver:
+https://github.com/adafruit/Adafruit_Windows_Drivers/releases/
+
+Download AVRDUDE (avrdude-x.x-mingw32.zip for Windows):
+http://download.savannah.gnu.org/releases/avrdude/
+
+Check connection with USBtinyISP and attiny84:
+avrdude -c usbtiny -p attiny84
+Flash hex file:
+avrdude -c usbtiny -p attiny84 -U flash:w:ServoTrigger.hex
